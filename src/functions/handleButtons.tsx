@@ -20,3 +20,5 @@ export function handleCity3() {
 
   return fetchNuernberg;
 }
+
+function Output(data: fetch) {}

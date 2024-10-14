@@ -1,5 +1,5 @@
 import { Weather } from "../modules/Weather";
-import { BASE_URL } from "./API_KEY";
+import { BASE_URL } from "../lib/API_KEY";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 

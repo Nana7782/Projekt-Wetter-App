@@ -1,4 +1,4 @@
-import { fetchWeather } from "../lib/FetchAPi";
+import { fetchWeather } from "./FetchWeather";
 
 export function handleCity1() {
   const fetchDuesseldorf = fetchWeather(51.2165, 6.7836);

@@ -1,5 +1,5 @@
 import Header from "./Header";
-import MainWeather from "./Main-weather";
+import MainWeather from "./MainWeather";
 import type { Weather } from "../modules/Weather";
 import { useState } from "react";
 
@@ -10,7 +10,7 @@ export default function Layout() {
     <div>
       <h1>Weather</h1>
       <Header setWeather={setWeather} />
-      {/* <MainWeather weather={weather} /> */}
+      <MainWeather weather={weather} />
     </div>
   );
 }

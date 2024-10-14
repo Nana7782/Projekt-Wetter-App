@@ -14,7 +14,10 @@ export default function MainWeather({ weather }: CityProps) {
   return (
     <main>
       <h1>{weather.name}</h1>
-      <img src={`../img/${weather.weather[0].icon}.png`} alt="weathericon" />
+      <img
+        src={`../src/img/${weather.weather[0].icon}.png`}
+        alt="weathericon"
+      />
       <h2>{weather.weather[0].description}</h2>
       <h3>{weather.main.temp}°C</h3>
     </main>

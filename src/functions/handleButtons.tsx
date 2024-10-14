@@ -3,6 +3,8 @@ import { fetchWeather } from "../lib/FetchAPi";
 export function handleCity1() {
   const fetchDuesseldorf = fetchWeather(51.2165, 6.7836);
   console.log(fetchDuesseldorf);
+
+  return;
 }
 
 export function handleCity2() {

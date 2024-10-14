@@ -2,7 +2,7 @@ export interface Weather {
   coord: Coord;
   weather: WeatherElement[];
   base: string;
-  main: Main;
+  main: IMain;
   visibility: number;
   wind: Wind;
   rain: Rain;
@@ -24,7 +24,7 @@ export interface Coord {
   lat: number;
 }
 
-export interface Main {
+export interface IMain {
   temp: number;
   feelsLike: number;
   tempMin: number;

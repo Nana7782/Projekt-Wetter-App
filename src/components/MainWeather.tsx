@@ -10,11 +10,13 @@ export default function MainWeather({ weather }: CityProps) {
   if (!weather) {
     return <div>Bitte wähle deine Stadt aus</div>;
   }
+  console.log(weather.name);
   return (
     <main>
       <h1>{weather.name}</h1>
-      <h2>{weather.clouds.all}</h2>
-      <h3>{weather.main.temp}</h3>
+      <img src={weather.weather[0].icon} alt="weathericon" />
+      <h2>{weather.weather[0].description}</h2>
+      <h3>{weather.main.temp}°C</h3>
     </main>
   );
 }

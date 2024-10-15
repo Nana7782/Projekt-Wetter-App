@@ -14,7 +14,7 @@
  */  font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(239, 239, 239, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -47,7 +47,7 @@ align-items: center;
 #logo-img{
   width: 150px;
   height: 150px;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 #logo-text{
@@ -74,26 +74,36 @@ body{
 
 header{
   margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 nav{
-  width: 60svw;
   display: flex;
   gap: 20px;
 }
 
 button{
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   padding: 10px 20px;
-  background-color: rgb(222, 102, 32);
+  background-color: rgb(168, 23, 23);
   border: 0px;
   border-radius: 10px;
 }
-#Kiel{}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(134, 7, 7);
+  }
+
+
+
+/* #Kiel{}
 #Duesseldorf{}
 #Nürnberg{}
-
+ */
 
 
 /* ------------ bevor fetch ------------ */
@@ -107,23 +117,73 @@ button{
 
 /* ------------ Main ------------ */
 
-main{}
+main{  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 /* ------------ Weather Now ------------ */
 
-.weatherNow{}
-.weatherNow h1{}
-.weatherNow img{}
-.weatherNow h2{}
-.weatherNow h3{}
+.weatherNow{
+  margin: 50px;
+  padding: 20px;
+  border-bottom: 2px solid #393939;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.weatherNow h1{
+  font-size: 3rem;
+  line-height: 0%;
+  padding: 30px;
+}
+.weatherNow img{
+  height: 100px;
+  width: 100px;
+  filter: sepia() hue-rotate(310deg) saturate(500%);
+}
+.weatherNow h2{
+  font-size: 1.1rem;
+}
+.weatherNow h3{
+  font-family: 'MidnightMinutes';
+  font-size: 2.5rem;
+  margin: 15px;
+}
 
 /* ------------ Weather Detail ------------ */
 
-.weatherCard{}
+/* .weatherCard{} */
 
-.weatherDetail{}
-.weatherDetail p{}
-.weatherDetail img{}
-.weatherDetail h2{}
-.weatherDetail h3{}
+.weatherDetail{  margin: 50px;
+  padding: 20px;
+  border-bottom: 2px solid #393939;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;}
+
+.weatherDetail p{
+  font-size: 3rem;
+  line-height: 0%;
+  padding: 30px;
+}
+
+.weatherDetail img{
+  height: 100px;
+  width: 100px;
+  filter: sepia() hue-rotate(310deg) saturate(500%);
+}
+
+.weatherDetail h2{
+  font-size: 1.1rem;
+}
+
+.weatherDetail h3{
+  font-family: 'MidnightMinutes';
+  font-size: 2.5rem;
+  margin: 15px;
+}

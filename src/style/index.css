@@ -1,9 +1,17 @@
+/* ------------ Schrift einbinden ------------ */
+
+@font-face {
+  font-family: 'MidnightMinutes';
+  src: url("../font/MidnightMinutes_DEMO.otf");
+}
+
+
 /* ------------ Allgemein ------------ */
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/*   line-height: 1.5;
+ */  font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -15,6 +23,51 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  margin: 30px;
+   scroll-behavior: smooth;
+  }
+
+
+/* ------------ Logobereich ------------ */
+
+#Logo-div{
+  margin-bottom: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#logo-img{
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+#logo-text{
+  margin-top: 15px;
+  font-size: 4.2rem;
+  font-family: 'MidnightMinutes';
+}
+#slogan{
+  font-size: 0.95rem;
+  margin-top: -8px;
+
+}
+
+/* 
+body{
+  padding: 30px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  background-color: #303030;
+} */
 
 
 /* ------------ Buttons / Header ------------ */
@@ -22,18 +75,35 @@
 header{
   margin: auto;
 }
+
 nav{
   width: 60svw;
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
+
 button{
-  font-size: 1.5rem;
-  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgb(222, 102, 32);
+  border: 0px;
+  border-radius: 10px;
 }
-#City1{}
-#City2{}
-#City3{}
+#Kiel{}
+#Duesseldorf{}
+#Nürnberg{}
+
+
+
+/* ------------ bevor fetch ------------ */
+
+
+.chooseCity{
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
 
 /* ------------ Main ------------ */
 

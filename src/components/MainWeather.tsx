@@ -3,13 +3,14 @@ import WeatherCard from "./WeatherCard";
 
 interface CityProps {
   weather: Weather | null;
+  weatherDetail: Weather | null;
 }
 
 export default function MainWeather({ weather }: CityProps) {
   // const weather = props.weather
   //const {weather} = props //& destructuring
   if (!weather) {
-    return <div>Bitte wähle deine Stadt aus</div>;
+    return <div className="chooseCity">Bitte wähle deine Stadt aus</div>;
   }
   console.log(weather.name);
   return (

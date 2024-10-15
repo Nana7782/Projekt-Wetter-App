@@ -19,9 +19,18 @@
 
 /* ------------ Buttons / Header ------------ */
 
-header{}
-nav{}
-button{}
+header{
+  margin: auto;
+}
+nav{
+  width: 60svw;
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  font-size: 1.5rem;
+  padding: 15px;
+}
 #City1{}
 #City2{}
 #City3{}

@@ -112,6 +112,9 @@ button:hover{
 .chooseCity{
   font-size: 1.5rem;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -121,8 +124,8 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-
 
 /* ------------ Weather Now ------------ */
 

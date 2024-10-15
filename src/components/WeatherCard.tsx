@@ -1,4 +1,3 @@
-import { mockComponent } from "react-dom/test-utils";
 import { WeatherDetails } from "../types/WeatherDetails";
 
 interface WeatherCardProps {
@@ -14,6 +13,7 @@ export default function WeatherCard({ weatherDetail }: WeatherCardProps) {
         return (
           <div key={weather.dt}>
             <p>{formattedDate}</p>
+            <img src={`../src/img/${weather.weather[0].icon}.png`} />
             <h2>{weather.main.temp}</h2>
             <p>{weather.weather[0].description}</p>
           </div>

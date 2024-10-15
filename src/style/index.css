@@ -117,13 +117,13 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100svh;
+  /* height: 100svh; */
 }
 
 /* ------------ Weather Now ------------ */
 
 .weatherNow {
-  margin: 50px;
+  margin: 20px;
   padding: 20px;
   border-bottom: 2px solid #393939;
   display: flex;

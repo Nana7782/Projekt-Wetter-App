@@ -31,15 +31,15 @@ unsere Demo zu unserer Wetter-App "Blutregen" findest du hier:
 ## Projektvorschau
 
 ### Start - wähle eine Stadt:
-![Start](src/img/For-read-me/Start.png)
+![Start](src/img/For-read-me/Start.png)<br>
 Als Startseite haben wir nur unsere Buttons und die Aufforderung sich eine der drei Städte auszuwählen, von der man das Wetter sehen möchte.
 
 ### Aktuelles Wetter:
-![Aktuelles Wetter](src/img/For-read-me/weather-now.png)
+![Aktuelles Wetter](src/img/For-read-me/weather-now.png) <br>
 Sobald man  sich eine Stadt ausgesucht hat bekommt man direkt das aktuelle Wetter angezeigt
 
 ### Die nächsten Stunden und Tage:
-![Vorschau der Zukunft](src/img/For-read-me/future-weather.png)
+![Vorschau der Zukunft](src/img/For-read-me/future-weather.png) <br>
 Wenn man weiter Runterscrollt, bekommt man das Karusell indem sich alle zukünftigen angeben des Wetters enthalten sind. Dies gitl für die nächsten fünf Tage und wird immer im drei Stunden takt vorgestellt
 
 <br>

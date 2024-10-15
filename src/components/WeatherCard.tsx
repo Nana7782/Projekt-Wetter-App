@@ -11,10 +11,10 @@ export default function WeatherCard({ weatherDetail }: WeatherCardProps) {
         const dateObject = new Date(weather.dt_txt);
         const formattedDate = dateObject.toLocaleString();
         return (
-          <div key={weather.dt}>
+          <div key={weather.dt} className="singleWeather">
             <p>{formattedDate}</p>
             <img src={`../src/img/${weather.weather[0].icon}.png`} />
-            <h2>{weather.main.temp}</h2>
+            <h2>{weather.main.temp}°C</h2>
             <p>{weather.weather[0].description}</p>
           </div>
         );

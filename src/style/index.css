@@ -1,17 +1,17 @@
 /* ------------ Schrift einbinden ------------ */
 
 @font-face {
-  font-family: 'MidnightMinutes';
+  font-family: "MidnightMinutes";
   src: url("../font/MidnightMinutes_DEMO.otf");
 }
-
 
 /* ------------ Allgemein ------------ */
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-/*   line-height: 1.5;
- */  font-weight: 400;
+  /*   line-height: 1.5;
+ */
+  font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(239, 239, 239, 0.87);
@@ -23,42 +23,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   margin: 30px;
-   scroll-behavior: smooth;
-  }
-
+  scroll-behavior: smooth;
+}
 
 /* ------------ Logobereich ------------ */
 
-#Logo-div{
+#Logo-div {
   margin-bottom: 45px;
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#logo-img{
+#logo-img {
   width: 150px;
   height: 150px;
   margin-right: 25px;
 }
 
-#logo-text{
+#logo-text {
   margin-top: 15px;
   font-size: 4.2rem;
-  font-family: 'MidnightMinutes';
+  font-family: "MidnightMinutes";
 }
-#slogan{
+#slogan {
   font-size: 0.95rem;
   margin-top: -8px;
-
 }
 
 /* 
@@ -69,22 +67,21 @@ body{
   background-color: #303030;
 } */
 
-
 /* ------------ Buttons / Header ------------ */
 
-header{
+header {
   margin: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-nav{
+nav {
   display: flex;
   gap: 20px;
 }
 
-button{
+button {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -93,23 +90,19 @@ button{
   border-radius: 10px;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   background-color: rgb(134, 7, 7);
-  }
-
-
+}
 
 /* #Kiel{}
 #Duesseldorf{}
 #Nürnberg{}
  */
 
-
 /* ------------ bevor fetch ------------ */
 
-
-.chooseCity{
+.chooseCity {
   font-size: 1.5rem;
   padding: 20px;
   display: flex;
@@ -117,19 +110,19 @@ button:hover{
   align-items: center;
 }
 
-
 /* ------------ Main ------------ */
 
-main{  
+main {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100svh;
 }
 
 /* ------------ Weather Now ------------ */
 
-.weatherNow{
+.weatherNow {
   margin: 50px;
   padding: 20px;
   border-bottom: 2px solid #393939;
@@ -138,55 +131,82 @@ main{
   flex-direction: column;
   justify-content: center;
 }
-.weatherNow h1{
+.weatherNow h1 {
   font-size: 3rem;
   line-height: 0%;
   padding: 30px;
+  text-shadow: 5px 5px 10px rgb(123, 5, 5);
+  margin-top: 2rem;
 }
-.weatherNow img{
+.weatherNow img {
   height: 100px;
   width: 100px;
   filter: sepia() hue-rotate(310deg) saturate(500%);
 }
-.weatherNow h2{
-  font-size: 1.1rem;
+.weatherNow h2 {
+  font-size: 2rem;
 }
-.weatherNow h3{
-  font-family: 'MidnightMinutes';
+.weatherNow h3 {
+  font-family: "MidnightMinutes";
   font-size: 2.5rem;
   margin: 15px;
 }
 
 /* ------------ Weather Detail ------------ */
 
-/* .weatherCard{} */
+.weatherCard {
+  width: 85svw;
+}
 
-.weatherDetail{  margin: 50px;
+h4 {
+  font-size: 3rem;
+}
+
+.weatherDetail {
+  margin: 50px;
   padding: 20px;
   border-bottom: 2px solid #393939;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;}
+  /* align-items: center;
+  justify-content: center; */
 
-.weatherDetail p{
-  font-size: 3rem;
-  line-height: 0%;
+  flex-wrap: nowrap;
+  margin: 50px 20px;
+  padding: 20px;
+  background-color: #3e3e3e;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+}
+
+.singleWeather {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 2px solid #242424;
+}
+
+.singleWeather p {
+  font-size: 1.3rem;
+  text-align: center;
   padding: 30px;
 }
 
-.weatherDetail img{
-  height: 100px;
-  width: 100px;
+.singleWeather img {
+  height: 70px;
+  width: 70px;
   filter: sepia() hue-rotate(310deg) saturate(500%);
 }
 
-.weatherDetail h2{
-  font-size: 1.1rem;
+.singleWeather h2 {
+  font-family: "MidnightMinutes";
+
+  font-size: 2rem;
 }
 
-.weatherDetail h3{
-  font-family: 'MidnightMinutes';
+.weatherDetail h3 {
+  font-family: "MidnightMinutes";
   font-size: 2.5rem;
   margin: 15px;
 }

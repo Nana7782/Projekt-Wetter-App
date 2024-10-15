@@ -5,12 +5,13 @@ import { useState } from "react";
 
 export default function Layout() {
   const [weather, setWeather] = useState<Weather | null>(null);
+  const [weatherDetail, setWeatherDetail] = useState<Weather | null>(null);
 
   return (
     <div>
       <h1>Weather</h1>
-      <Header setWeather={setWeather} />
-      <MainWeather weather={weather} />
+      <Header setWeather={setWeather} setWeatherDetail={setWeatherDetail} />
+      <MainWeather weather={weather} weatherDetail={weatherDetail} />
     </div>
   );
 }

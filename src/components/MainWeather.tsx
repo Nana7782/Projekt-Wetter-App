@@ -3,6 +3,7 @@ import WeatherCard from "./WeatherCard";
 
 interface CityProps {
   weather: Weather | null;
+  weatherDetail: Weather | null;
 }
 
 export default function MainWeather({ weather }: CityProps) {

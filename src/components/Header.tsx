@@ -18,6 +18,13 @@ export default function Header({ setWeather, setWeatherDetail }: HeaderProps) {
 
   return (
     <header>
+      <div id="Logo-div">
+        <img src="../src/img/Blutregen-logo-icon.png" alt="" id="logo-img" />
+        <div>
+          <h1 id="logo-text">Blutregen!</h1>
+          <p id="slogan"> Die beste Wetter-App der Galaxis!</p>
+        </div>
+      </div>
       <nav>
         <button id="Kiel" onClick={() => handleCity("Kiel")}>
           Kiel

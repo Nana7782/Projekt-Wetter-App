@@ -12,7 +12,6 @@ export default function Layout() {
 
   return (
     <div>
-      <h1>Weather</h1>
       <Header setWeather={setWeather} setWeatherDetail={setWeatherDetail} />
       <MainWeather weather={weather} weatherDetail={weatherDetail} />
     </div>

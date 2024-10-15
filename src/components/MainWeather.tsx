@@ -11,7 +11,7 @@ export default function MainWeather({ weather, weatherDetail }: CityProps) {
   // const weather = props.weather
   //const {weather} = props //& destructuring
   if (!weather) {
-    return <div>Bitte wähle deine Stadt aus</div>;
+    return <div className="chooseCity">Bitte wähle deine Stadt aus</div>;
   }
   console.log(weather.name);
   return (
@@ -25,9 +25,13 @@ export default function MainWeather({ weather, weatherDetail }: CityProps) {
         <h2>{weather.weather[0].description}</h2>
         <h3>{weather.main.temp}°C</h3>
       </div>
-      <div className="weatherDetail">
+
+      <div className="weatherCard">
+        <p>Blick in die Zukunft</p>
         {weatherDetail && <WeatherCard weatherDetail={weatherDetail} />}
+
       </div>
+       
     </main>
   );
 }

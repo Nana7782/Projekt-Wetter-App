@@ -1,0 +1,192 @@
+/* ------------ Schrift einbinden ------------ */
+
+@font-face {
+  font-family: 'MidnightMinutes';
+  src: url("../font/MidnightMinutes_DEMO.otf");
+}
+
+
+/* ------------ Allgemein ------------ */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+/*   line-height: 1.5;
+ */  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(239, 239, 239, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  margin: 30px;
+   scroll-behavior: smooth;
+  }
+
+
+/* ------------ Logobereich ------------ */
+
+#Logo-div{
+  margin-bottom: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#logo-img{
+  width: 150px;
+  height: 150px;
+  margin-right: 25px;
+}
+
+#logo-text{
+  margin-top: 15px;
+  font-size: 4.2rem;
+  font-family: 'MidnightMinutes';
+}
+#slogan{
+  font-size: 0.95rem;
+  margin-top: -8px;
+
+}
+
+/* 
+body{
+  padding: 30px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  background-color: #303030;
+} */
+
+
+/* ------------ Buttons / Header ------------ */
+
+header{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+}
+
+button{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgb(168, 23, 23);
+  border: 0px;
+  border-radius: 10px;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(134, 7, 7);
+  }
+
+
+
+/* #Kiel{}
+#Duesseldorf{}
+#Nürnberg{}
+ */
+
+
+/* ------------ bevor fetch ------------ */
+
+
+.chooseCity{
+  font-size: 1.5rem;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ------------ Main ------------ */
+
+main{  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ------------ Weather Now ------------ */
+
+.weatherNow{
+  margin: 50px;
+  padding: 20px;
+  border-bottom: 2px solid #393939;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.weatherNow h1{
+  font-size: 3rem;
+  line-height: 0%;
+  padding: 30px;
+}
+.weatherNow img{
+  height: 100px;
+  width: 100px;
+  filter: sepia() hue-rotate(310deg) saturate(500%);
+}
+.weatherNow h2{
+  font-size: 1.1rem;
+}
+.weatherNow h3{
+  font-family: 'MidnightMinutes';
+  font-size: 2.5rem;
+  margin: 15px;
+}
+
+/* ------------ Weather Detail ------------ */
+
+/* .weatherCard{} */
+
+.weatherDetail{  margin: 50px;
+  padding: 20px;
+  border-bottom: 2px solid #393939;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;}
+
+.weatherDetail p{
+  font-size: 3rem;
+  line-height: 0%;
+  padding: 30px;
+}
+
+.weatherDetail img{
+  height: 100px;
+  width: 100px;
+  filter: sepia() hue-rotate(310deg) saturate(500%);
+}
+
+.weatherDetail h2{
+  font-size: 1.1rem;
+}
+
+.weatherDetail h3{
+  font-family: 'MidnightMinutes';
+  font-size: 2.5rem;
+  margin: 15px;
+}

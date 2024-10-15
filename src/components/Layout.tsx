@@ -1,11 +1,14 @@
 import Header from "./Header";
 import MainWeather from "./MainWeather";
-import type { Weather } from "../modules/Weather";
+import type { Weather } from "../types/Weather";
 import { useState } from "react";
+import { WeatherDetails } from "../types/WeatherDetails";
 
 export default function Layout() {
   const [weather, setWeather] = useState<Weather | null>(null);
-  const [weatherDetail, setWeatherDetail] = useState<Weather | null>(null);
+  const [weatherDetail, setWeatherDetail] = useState<WeatherDetails | null>(
+    null
+  );
 
   return (
     <div>

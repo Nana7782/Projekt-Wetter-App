@@ -1,9 +1,10 @@
 import { fetchWeather, fetchWeatherDetail } from "../functions/FetchWeather";
-import type { Weather } from "../modules/Weather";
+import type { Weather } from "../types/Weather";
+import { WeatherDetails } from "../types/WeatherDetails";
 
 interface HeaderProps {
   setWeather: React.Dispatch<React.SetStateAction<Weather | null>>;
-  setWeatherDetail: React.Dispatch<React.SetStateAction<Weather | null>>;
+  setWeatherDetail: React.Dispatch<React.SetStateAction<WeatherDetails | null>>;
 }
 
 export default function Header({ setWeather, setWeatherDetail }: HeaderProps) {

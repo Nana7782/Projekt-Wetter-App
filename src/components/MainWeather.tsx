@@ -1,12 +1,13 @@
-import { IMain, Weather } from "../modules/Weather";
+import { Weather } from "../types/Weather";
+import { WeatherDetails } from "../types/WeatherDetails";
 import WeatherCard from "./WeatherCard";
 
 interface CityProps {
   weather: Weather | null;
-  weatherDetail: Weather | null;
+  weatherDetail: WeatherDetails | null;
 }
 
-export default function MainWeather({ weather }: CityProps) {
+export default function MainWeather({ weather, weatherDetail }: CityProps) {
   // const weather = props.weather
   //const {weather} = props //& destructuring
   if (!weather) {
@@ -24,7 +25,9 @@ export default function MainWeather({ weather }: CityProps) {
         <h2>{weather.weather[0].description}</h2>
         <h3>{weather.main.temp}°C</h3>
       </div>
-      <div className="weatherDetail">{/* <WeatherCard /> */}</div>
+      <div className="weatherDetail">
+        {weatherDetail && <WeatherCard weatherDetail={weatherDetail} />}
+      </div>
     </main>
   );
 }

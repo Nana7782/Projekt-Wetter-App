@@ -23,7 +23,7 @@ export default function MainWeather({ weather }: CityProps) {
         <h2>{weather.weather[0].description}</h2>
         <h3>{weather.main.temp}°C</h3>
       </div>
-      <div className="weatherDetail">{/* <WeatherCard /> */}</div>
+      <div className="weatherCard">{/* <WeatherCard /> */}</div>
     </main>
   );
 }

@@ -8,9 +8,7 @@ Eine kleine Browser-Wetter- App mit den Daten der openweathermap.org API.
 - [Demo](#demo)
 - [Tech Stack](#tech-stack)
 - [Projektvorschau](#Projektvorschau)
-- [API Integration](#api-integration)
-<!-- - [Database](#database) -->
-<!-- - [Backend Routes](#backend-routes) -->
+- [API Vorstellung und Integration](#API-Vorstellung-und-Integration)
 - [Design](#design)
 - [Deployment](#deployment)
 - [Contributors](#contributors)
@@ -55,7 +53,8 @@ weir haben zwei Fetchen geschrieben, die von unseren Buttons mit den Städtenahm
 <br>
 
 ## Design
-Beim gestalten hatten wir jeglichen Freiraum und haben uns entschieden die ganze Wetter-App etwas <b>METAL</b> zu machen: Fetziger Name, fetziges Logo und die passende Gestaltung folgte sogleich! Alles in einem schwarz-roten Stil, das erfreut jedes dunkle Herz der anhänger von harter Musik. Zudem ist auch gerade Oktober und somit Spooky-Season 👻 somit auch wieder thematisch passend
+Beim gestalten hatten wir jeglichen Freiraum und haben uns entschieden die ganze Wetter-App etwas <b>METAL</b> zu machen: Fetziger Name, fetziges Logo und die passende Gestaltung folgte sogleich! Alles in einem schwarz-roten Stil, das erfreut jedes dunkle Herz der anhänger von harter Musik. Zudem ist auch gerade Oktober und somit Spooky-Season 👻 somit auch wieder thematisch passend.
+Die Bilder, die uns die API mitgegeben hat, haben eine orange/weiße Farbwelt. Das passst leider nicht zu dem Design, das wir uns hier ausgedacht haben. Somit haben wir den Bilderen einen Filter gegeben um die Bilder alle rötlicher erscheinen zu lassen
 
 <br>
 

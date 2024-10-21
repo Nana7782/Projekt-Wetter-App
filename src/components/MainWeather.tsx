@@ -19,7 +19,7 @@ export default function MainWeather({ weather, weatherDetail }: CityProps) {
       <div className="weatherNow">
         <h1>{weather.name}</h1>
         <img
-          src={`../src/img/${weather.weather[0].icon}.png`}
+          src={`/weather-img/${weather.weather[0].icon}.png`}
           alt="weathericon"
         />
         <h2>{weather.weather[0].description}</h2>

@@ -13,7 +13,7 @@ export default function WeatherCard({ weatherDetail }: WeatherCardProps) {
         return (
           <div key={weather.dt} className="singleWeather">
             <p>{formattedDate}</p>
-            <img src={`../src/img/${weather.weather[0].icon}.png`} />
+            <img src={`/weather-img/${weather.weather[0].icon}.png`} />
             <h2>{weather.main.temp}°C</h2>
             <p>{weather.weather[0].description}</p>
           </div>
